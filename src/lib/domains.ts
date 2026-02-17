@@ -70,6 +70,7 @@ export const domains: Domain[] = [
       { id: "3.5", number: "3.5", title: "Concurrency & Synchronization", description: "Race conditions, mutexes, thread interleaving", status: "available", href: "/modules/3-5-concurrency" },
       { id: "3.6", number: "3.6", title: "Deadlock Visualizer", description: "Resource allocation graph, cycle detection, Banker's algorithm", status: "available", href: "/modules/3-6-deadlock" },
       { id: "3.7", number: "3.7", title: "File Systems", description: "Inode structure, directory tree, block allocation strategies", status: "available", href: "/modules/3-7-filesystems" },
+      { id: "3.8", number: "3.8", title: "I/O & Interrupts", description: "Interrupt handling flow, DMA transfer, device driver model", status: "available", href: "/modules/3-8-io-interrupts" },
     ],
   },
   {
