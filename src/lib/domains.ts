@@ -73,6 +73,7 @@ export const domains: Domain[] = [
       { id: "3.8", number: "3.8", title: "I/O & Interrupts", description: "Interrupt handling flow, DMA transfer, device driver model", status: "available", href: "/modules/3-8-io-interrupts" },
       { id: "3.9", number: "3.9", title: "System Calls", description: "User-space to kernel-space transition, syscall table lookup", status: "available", href: "/modules/3-9-syscalls" },
       { id: "3.10", number: "3.10", title: "Linux Boot Sequence", description: "BIOS/UEFI to bootloader to kernel to systemd", status: "available", href: "/modules/3-10-boot" },
+      { id: "3.11", number: "3.11", title: "Containers & Namespaces", description: "Process isolation, cgroups, overlay filesystems", status: "available", href: "/modules/3-11-containers" },
     ],
   },
   {
