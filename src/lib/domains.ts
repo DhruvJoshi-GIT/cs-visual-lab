@@ -51,6 +51,7 @@ export const domains: Domain[] = [
       { id: "2.6", number: "2.6", title: "CPU Cache Simulator", description: "Nested loop cache behavior, stride visualization", status: "available", href: "/modules/2-6-cache-simulator" },
       { id: "2.7", number: "2.7", title: "Out-of-Order Execution", description: "Reservation stations, ROB, Tomasulo's algorithm", status: "available", href: "/modules/2-7-ooo-execution" },
       { id: "2.8", number: "2.8", title: "Virtual Memory & TLB", description: "Page table walk, TLB lookup, page fault handling", status: "available", href: "/modules/2-8-virtual-memory" },
+      { id: "2.9", number: "2.9", title: "Memory Ordering & Barriers", description: "Store buffers, memory fences, TSO vs relaxed", status: "available", href: "/modules/2-9-memory-ordering" },
     ],
   },
   {
