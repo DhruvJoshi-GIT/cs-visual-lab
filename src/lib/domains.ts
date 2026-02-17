@@ -95,6 +95,7 @@ export const domains: Domain[] = [
       { id: "4.9", number: "4.9", title: "Shortest Path: Dijkstra & Bellman-Ford", description: "Priority queue state, edge relaxation animation", status: "available", href: "/modules/4-9-shortest-path" },
       { id: "4.10", number: "4.10", title: "Minimum Spanning Tree", description: "Kruskal's and Prim's algorithms", status: "available", href: "/modules/4-10-mst" },
       { id: "4.11", number: "4.11", title: "Topological Sort", description: "DAG ordering with Kahn's algorithm", status: "available", href: "/modules/4-11-topological-sort" },
+      { id: "4.12", number: "4.12", title: "Dynamic Programming", description: "DP table filling animation with traceback", status: "available", href: "/modules/4-12-dynamic-programming" },
     ],
   },
   {
