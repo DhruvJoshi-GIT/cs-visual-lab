@@ -91,6 +91,7 @@ export const domains: Domain[] = [
       { id: "4.5", number: "4.5", title: "B-Trees & B+ Trees", description: "Node splits, merges, range queries", status: "available", href: "/modules/4-5-btrees" },
       { id: "4.6", number: "4.6", title: "Heaps & Priority Queues", description: "Binary heap with bubble-up/down animation", status: "available", href: "/modules/4-6-heaps" },
       { id: "4.7", number: "4.7", title: "Tries & Suffix Trees", description: "Prefix tree construction and search", status: "available", href: "/modules/4-7-tries" },
+      { id: "4.8", number: "4.8", title: "Graphs: BFS & DFS", description: "Node-by-node traversal with frontier/visited coloring", status: "available", href: "/modules/4-8-graph-traversal" },
     ],
   },
   {
