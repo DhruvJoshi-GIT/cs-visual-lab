@@ -98,6 +98,7 @@ export const domains: Domain[] = [
       { id: "4.12", number: "4.12", title: "Dynamic Programming", description: "DP table filling animation with traceback", status: "available", href: "/modules/4-12-dynamic-programming" },
       { id: "4.13", number: "4.13", title: "Union-Find (Disjoint Sets)", description: "Path compression and union by rank animation", status: "available", href: "/modules/4-13-union-find" },
       { id: "4.14", number: "4.14", title: "Complexity Analysis", description: "Big-O growth curves and time estimates", status: "available", href: "/modules/4-14-complexity" },
+      { id: "4.15", number: "4.15", title: "String Matching", description: "KMP and Naive pattern matching with failure table", status: "available", href: "/modules/4-15-string-matching" },
     ],
   },
   {
