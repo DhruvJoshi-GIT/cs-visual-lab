@@ -66,6 +66,7 @@ export const domains: Domain[] = [
       { id: "3.1", number: "3.1", title: "Process Model", description: "PCB structure and state transitions", status: "available", href: "/modules/3-1-processes" },
       { id: "3.2", number: "3.2", title: "CPU Scheduling", description: "FCFS, SJF, Round Robin, MLFQ", status: "available", href: "/modules/3-2-scheduling" },
       { id: "3.3", number: "3.3", title: "Memory Management", description: "Paging, segmentation, page replacement", status: "available", href: "/modules/3-3-memory" },
+      { id: "3.4", number: "3.4", title: "Memory Allocator Playground", description: "malloc/free with first-fit, best-fit, buddy system", status: "available", href: "/modules/3-4-allocator" },
     ],
   },
   {
