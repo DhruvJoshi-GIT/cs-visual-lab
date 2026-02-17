@@ -52,6 +52,7 @@ export const domains: Domain[] = [
       { id: "2.7", number: "2.7", title: "Out-of-Order Execution", description: "Reservation stations, ROB, Tomasulo's algorithm", status: "available", href: "/modules/2-7-ooo-execution" },
       { id: "2.8", number: "2.8", title: "Virtual Memory & TLB", description: "Page table walk, TLB lookup, page fault handling", status: "available", href: "/modules/2-8-virtual-memory" },
       { id: "2.9", number: "2.9", title: "Memory Ordering & Barriers", description: "Store buffers, memory fences, TSO vs relaxed", status: "available", href: "/modules/2-9-memory-ordering" },
+      { id: "2.10", number: "2.10", title: "SIMD / Vector Processing", description: "Scalar vs SIMD throughput comparison", status: "available", href: "/modules/2-10-simd" },
     ],
   },
   {
