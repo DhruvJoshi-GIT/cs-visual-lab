@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0f;
+  --foreground: #e4e4e7;
+  --card: #111118;
+  --card-hover: #16161f;
+  --border: #1e1e2e;
+  --border-hover: #2a2a3e;
+  --primary: #6366f1;
+  --primary-hover: #818cf8;
+  --primary-glow: rgba(99, 102, 241, 0.15);
+  --secondary: #06b6d4;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+  --muted: #71717a;
+  --muted-foreground: #a1a1aa;
+  --surface: #0f0f17;
+  --surface-2: #141420;
+  --gradient-1: linear-gradient(135deg, #6366f1, #06b6d4);
+  --gradient-2: linear-gradient(135deg, #6366f1, #ec4899);
+  --gradient-3: linear-gradient(135deg, #06b6d4, #10b981);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 20px var(--primary-glow), 0 0 60px rgba(99, 102, 241, 0.05);
+}
+
+.glow-text {
+  text-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+}
+
+/* Grid pattern background */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Dot pattern */
+.bg-dots {
+  background-image: radial-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Animated gradient border */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.gradient-border {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    conic-gradient(from var(--angle), #6366f1, #06b6d4, #6366f1) border-box;
+  animation: rotate-gradient 4s linear infinite;
+}
+
+@keyframes rotate-gradient {
+  to { --angle: 360deg; }
+}
+
+/* Visualization SVG styles */
+.viz-node {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.viz-edge {
+  stroke-linecap: round;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Pulse animation for active elements */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Slide-in animation */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Data flow animation on SVG paths */
+@keyframes dash-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+.animate-flow {
+  stroke-dasharray: 8 12;
+  animation: dash-flow 0.8s linear infinite;
+}
+
+/* KaTeX overrides for dark theme */
+.katex { color: var(--foreground) !important; }
+.katex .mord { color: var(--foreground) !important; }
