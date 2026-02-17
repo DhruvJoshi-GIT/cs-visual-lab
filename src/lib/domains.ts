@@ -68,6 +68,7 @@ export const domains: Domain[] = [
       { id: "3.3", number: "3.3", title: "Memory Management", description: "Paging, segmentation, page replacement", status: "available", href: "/modules/3-3-memory" },
       { id: "3.4", number: "3.4", title: "Memory Allocator Playground", description: "malloc/free with first-fit, best-fit, buddy system", status: "available", href: "/modules/3-4-allocator" },
       { id: "3.5", number: "3.5", title: "Concurrency & Synchronization", description: "Race conditions, mutexes, thread interleaving", status: "available", href: "/modules/3-5-concurrency" },
+      { id: "3.6", number: "3.6", title: "Deadlock Visualizer", description: "Resource allocation graph, cycle detection, Banker's algorithm", status: "available", href: "/modules/3-6-deadlock" },
     ],
   },
   {
